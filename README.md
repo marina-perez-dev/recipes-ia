@@ -20,6 +20,38 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Outils de Qualité de Code
+
+Ce projet utilise **ESLint** et **Prettier** pour garantir la qualité et la cohérence du code.
+
+### ESLint
+
+[ESLint](https://eslint.org/) est configuré avec les règles recommandées de Next.js pour détecter les erreurs et problèmes potentiels dans le code.
+
+**Commandes disponibles :**
+
+```bash
+npm run lint        # Vérifie le code avec ESLint
+npm run lint:fix    # Corrige automatiquement les erreurs ESLint
+```
+
+### Prettier
+
+[Prettier](https://prettier.io/) est configuré pour formater automatiquement le code selon des standards cohérents, garantissant un style uniforme dans tout le projet.
+
+**Commandes disponibles :**
+
+```bash
+npm run format        # Formate tout le code avec Prettier
+npm run format:check  # Vérifie le formatage sans modifier les fichiers
+```
+
+### Configuration
+
+- **ESLint** : Configuration dans `eslint.config.mjs` avec `eslint-config-next` et `eslint-config-prettier` pour éviter les conflits
+- **Prettier** : Configuration dans `.prettierrc` avec règles personnalisées
+- Les deux outils sont intégrés pour fonctionner ensemble sans conflit
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
